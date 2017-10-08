@@ -26,11 +26,12 @@ public class Player : MonoBehaviour {
 	public float obsEveryDist = 20f;
 	public float everyDistCounter = 0;
 	public float obsOffset = 100f;
+	float distThisFrame;
 
 	public GameObject electricityPickup;
 	public GameObject wrenchPickup;
 
-	public Rigidbody rb;
+	Rigidbody rb;
 
 
 	// Use this for initialization
@@ -65,34 +66,11 @@ public class Player : MonoBehaviour {
 				// spawning 10 obstacles
 				int i;
 				for (i = 0; i < 20; i++) {
-
-					// setting x and z of the obstacle
-					obsX = Random.Range (-1000, 1000) + transform.position.x;
-					obsZ = transform.position.z + obsOffset;
-
-					// spawning obstacle
-					Instantiate (obstacle, new Vector3 (obsX, 6, obsZ), Quaternion.identity);
-
-					// electricity
-					if (Random.Range (0, 5) == 2) {
-						float pX = Random.Range (-1000, 1000) + transform.position.x;
-						float pZ = obsZ;
-						Instantiate (electricityPickup, new Vector3 (pX, 10f, pZ), Quaternion.identity);
-					}
-
-					// wrench
-					if (Random.Range (0, 30) == 2) {
-						float wX = Random.Range (-1000, 1000) + transform.position.x;
-						float wZ = obsZ;
-						Instantiate (wrenchPickup, new Vector3 (wX, 10f, wZ), Quaternion.identity);
-					}
-
-					playerZ = transform.position.z;
+					CreateObstacle ();
 				}
-				Debug.Log ("Generated Layer " + playerZ);
 			}
 
-			float distThisFrame = forwardVel * Time.deltaTime;
+			distThisFrame = Mathf.Round (100 * forwardVel * Time.deltaTime) / 100f;
 			everyDistCounter += distThisFrame;
 
 			// adding distance
@@ -112,15 +90,40 @@ public class Player : MonoBehaviour {
 			}
 
 			// setting player's y to 5
-			transform.position = new Vector3(transform.position.x, 5f, transform.position.z);
+			transform.position = new Vector3 (transform.position.x, 5f, transform.position.z);
 		}
 	}
 
-	void OnCollisionEnter(Collision other){
+	public void CreateObstacle () {
+		// setting x and z of the obstacle
+		obsX = Random.Range (-1000, 1000) + transform.position.x;
+		obsZ = transform.position.z + obsOffset;
+
+		// spawning obstacle
+		Instantiate (obstacle, new Vector3 (obsX, 6, obsZ), Quaternion.identity);
+
+		// electricity
+		if (Random.Range (0, 5) == 2) {
+			float pX = Random.Range (-1000, 1000) + transform.position.x;
+			float pZ = obsZ;
+			Instantiate (electricityPickup, new Vector3 (pX, 10f, pZ), Quaternion.identity);
+		}
+
+		// wrench
+		if (Random.Range (0, 30) == 2) {
+			float wX = Random.Range (-1000, 1000) + transform.position.x;
+			float wZ = obsZ;
+			Instantiate (wrenchPickup, new Vector3 (wX, 10f, wZ), Quaternion.identity);
+		}
+
+		playerZ = transform.position.z;
+	}
+
+	void OnCollisionEnter (Collision other) {
 
 		// detecting collisions and deducting health
-		if(other.gameObject.CompareTag("obstacle")){
-			health -= Mathf.Abs(forwardVel * 0.02f);
+		if (other.gameObject.CompareTag ("obstacle")) {
+			health -= Mathf.Abs (forwardVel * 0.02f);
 		}
 	}
 
@@ -134,7 +137,7 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	public static void AddHealth(){
+	public static void AddHealth () {
 		health += 5;
 
 		if (health > 100) {
@@ -142,14 +145,14 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	void Death(){
+	void Death () {
 		rb.constraints = RigidbodyConstraints.None;
-		rb.AddTorque(Vector3.up*100000f);
-		rb.AddTorque(Vector3.right*100000f);
-		rb.AddTorque(Vector3.forward*100000f);
+		rb.AddTorque (Vector3.up * 100000f);
+		rb.AddTorque (Vector3.right * 100000f);
+		rb.AddTorque (Vector3.forward * 100000f);
 	}
 
-	void PowerLoss(){
+	void PowerLoss () {
 		if (!powerDownPlay) {
 			powerDown.Play ();
 			powerDownPlay = true;
@@ -157,7 +160,7 @@ public class Player : MonoBehaviour {
 		rb.constraints = RigidbodyConstraints.None;
 	}
 
-	void OnLevelWasLoaded(){
+	void OnLevelWasLoaded () {
 		health = 100;
 		electricity = 1000;
 		distance = 0;

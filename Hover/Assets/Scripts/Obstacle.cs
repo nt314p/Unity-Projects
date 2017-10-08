@@ -16,24 +16,11 @@ public class Obstacle : MonoBehaviour {
 
 		transform.localScale = new Vector3 (l, h, w);
 		transform.position = new Vector3 (transform.position.x, h / 2 - 6, transform.position.z);
-
 	}
 
 	void Update () {
 		if (Player.playerZ > transform.position.z + 150) {
 			Destroy (this.gameObject);
 		}
-		//if (this.GetComponent<Collider> ().bounds.Intersects()) {
-			
-		//}
-
 	}
-
-	void OnCollisionEnter(Collision other){
-		Debug.Log ("Obstacle Inside (AKA POTATO)");
-		if (other.gameObject.CompareTag ("obstacle")) {
-			Destroy (this.gameObject);
-		}
-	}
-
 }
