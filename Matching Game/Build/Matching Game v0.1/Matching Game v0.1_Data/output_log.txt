@@ -1,0 +1,40 @@
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1112 MB
+    Driver:   20.19.15.4568
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.068 seconds
+Platform assembly: C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\ntong\Desktop\Unity 5 Games\Matching Game\Build\Matching Game v0.1\Matching Game v0.1_Data\Managed\System.dll (this message is harmless)
+desktop: 2160x1440 59Hz; virtual: 2160x1440 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.067516 ms
+Difficulty selection changed to: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1ccc -> priority: 1 
+Difficulty selection changed to: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

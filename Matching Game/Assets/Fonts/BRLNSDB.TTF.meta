@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 79c0858b756dc6043a13801e9b9894f2
+timeCreated: 1490145565
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 90
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Berlin Sans FB Demi
+  fontNames:
+  - Berlin Sans FB Demi
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
