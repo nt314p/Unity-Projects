@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3D Object, Lighting, and Material Tester", "Assembly-CSharp.csproj", "{E375EA42-5412-6FAD-0040-E463A9FEFAB1}"
 EndProject
 Global

@@ -1,0 +1,315 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1112 MB
+    Driver:   20.19.15.4568
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\ntong\Desktop\Unity Projects\Just Smashing\Build\Just Smashing_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\ntong\Desktop\Unity Projects\Just Smashing\Build\Just Smashing_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\ntong\Desktop\Unity Projects\Just Smashing\Build\Just Smashing_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\ntong\Desktop\Unity Projects\Just Smashing\Build\Just Smashing_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\ntong\Desktop\Unity Projects\Just Smashing\Build\Just Smashing_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\ntong\Desktop\Unity Projects\Just Smashing\Build\Just Smashing_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\ntong\Desktop\Unity Projects\Just Smashing\Build\Just Smashing_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\ntong\Desktop\Unity Projects\Just Smashing\Build\Just Smashing_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.233 seconds
+Platform assembly: C:\Users\ntong\Desktop\Unity Projects\Just Smashing\Build\Just Smashing_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\ntong\Desktop\Unity Projects\Just Smashing\Build\Just Smashing_Data\Managed\System.dll (this message is harmless)
+desktop: 2160x1440 59Hz; virtual: 2160x1440 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.988283 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2a30 -> priority: 1 
+  Thread -> id: 36b8 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.597347 ms
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 659.
+Total: 1.412695 ms (FindLiveObjects: 0.080877 ms CreateObjectMapping: 0.066098 ms MarkObjects: 0.962324 ms  DeleteObjects: 0.300931 ms)
+
+Loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Next Scene!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.093447 ms
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 645.
+Total: 0.710658 ms (FindLiveObjects: 0.182283 ms CreateObjectMapping: 0.037359 ms MarkObjects: 0.329670 ms  DeleteObjects: 0.160113 ms)
+
+50 and 50
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1 and 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player One's Boost set to: 50
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player One's Vehicle Number is: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player Two's Boost set to: 50
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player Two's Vehicle Number is: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Paused
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Paused
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Paused
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Paused
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Paused
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Paused
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.247844 ms
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 662.
+Total: 22.964821 ms (FindLiveObjects: 0.240170 ms CreateObjectMapping: 0.119880 ms MarkObjects: 2.337660 ms  DeleteObjects: 20.263414 ms)
+
+Loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Next Scene!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.255139 ms
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 646.
+Total: 0.645791 ms (FindLiveObjects: 0.090731 ms CreateObjectMapping: 0.036949 ms MarkObjects: 0.327206 ms  DeleteObjects: 0.190083 ms)
+
+50 and 50
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1 and 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player One's Boost set to: 50
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player One's Vehicle Number is: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player Two's Boost set to: 50
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player Two's Vehicle Number is: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Paused
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Paused
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.278541 ms
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 663.
+Total: 27.610172 ms (FindLiveObjects: 0.225801 ms CreateObjectMapping: 0.142049 ms MarkObjects: 2.611495 ms  DeleteObjects: 24.627131 ms)
+
+Loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MoveCamera function called!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Next Scene!!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.422548 ms
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 647.
+Total: 0.793178 ms (FindLiveObjects: 0.083341 ms CreateObjectMapping: 0.037359 ms MarkObjects: 0.442160 ms  DeleteObjects: 0.229496 ms)
+
+100 and 100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1 and 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player One's Boost set to: 100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player One's Vehicle Number is: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player Two's Boost set to: 100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player Two's Vehicle Number is: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player One Wins!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.605747 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 647.
+Total: 2.350797 ms (FindLiveObjects: 0.225801 ms CreateObjectMapping: 0.114953 ms MarkObjects: 1.952976 ms  DeleteObjects: 0.054192 ms)
+
+100 and 100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1 and 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player One's Boost set to: 100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player One's Vehicle Number is: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player Two's Boost set to: 100
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player Two's Vehicle Number is: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Can't Touch This Activated!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Can't Touch This Activated!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Can't Touch This Activated!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player One Wins!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
