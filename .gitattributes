@@ -1,1 +1,1 @@
-*.aspx linguist-language=Java
+*.aspx linguist-vendored=true
