@@ -8,11 +8,13 @@ public class CameraController : MonoBehaviour {
 
 	public Vector3 target;
 
+	private Vector3 positionVelocity;
 
-	void Update() {
+
+	void FixedUpdate() {
 		if (!Player.dead && !Player.powerLoss) {
-			target = player.transform.position + new Vector3 (0, 21, -50);
-			transform.position = target;
+			target = player.transform.position + new Vector3 (0, 25, -50);
+			transform.position = Vector3.SmoothDamp(transform.position, target, ref positionVelocity, 0.15f);
 		}
 	}
 }

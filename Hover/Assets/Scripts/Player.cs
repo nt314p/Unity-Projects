@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-
+	// transform and rotation
 	public float speed = 200f;
 	public float turnSpeed = 200f;
+	public float turnAngle = 0f;
+
 
 	public static float health = 100f;
 	public static float electricity = 1000f;
@@ -14,10 +16,11 @@ public class Player : MonoBehaviour {
 	public static float distance = 0f;
 	public static bool dead = false;
 	public static bool powerLoss = false;
+
+	// audio
 	public AudioSource powerDown;
 	public bool powerDownPlay = false;
 
-	public static float playerZ;
 
 	// obstacle generation
 	public GameObject obstacle;
@@ -28,6 +31,9 @@ public class Player : MonoBehaviour {
 	public float obsOffset = 100f;
 	float distThisFrame;
 
+	public static float playerZ;
+
+	// pickups
 	public GameObject electricityPickup;
 	public GameObject wrenchPickup;
 
@@ -49,11 +55,13 @@ public class Player : MonoBehaviour {
 
 			// turning the hovercraft
 			transform.eulerAngles = new Vector3 (0, 0, Input.GetAxis ("Horizontal") * -15);
-
 			// moving the hovercraft left and right
-			if (Mathf.Abs (rb.velocity.x) < 300) {
-				rb.AddForce (Vector3.right * Input.GetAxis ("Horizontal") * 100 * turnSpeed * Time.deltaTime);
+			if (Mathf.Abs (rb.velocity.x) > 300) {
+				Debug.Log ("Speed over 300!");
 			}
+
+			rb.AddForce (Vector3.right * Input.GetAxis ("Horizontal") * 100 * turnSpeed * Time.deltaTime);
+
 			// forward movement
 			if (forwardVel < 250) {
 				rb.AddRelativeForce (Vector3.forward * speed * 100 * Time.deltaTime);
