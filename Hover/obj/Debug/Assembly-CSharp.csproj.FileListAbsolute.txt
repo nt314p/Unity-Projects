@@ -29,3 +29,6 @@ C:\Users\ntong\Desktop\Unity Projects\Hover\Temp\bin\Debug\UnityEngine.VR.xml
 C:\Users\ntong\Desktop\Unity Projects\Hover\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\ntong\Desktop\Unity Projects\Hover\obj\Debug\Assembly-CSharp.dll
 C:\Users\ntong\Desktop\Unity Projects\Hover\obj\Debug\Assembly-CSharp.pdb
+C:\Dev\GitHub\Unity-Projects\Hover\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Dev\GitHub\Unity-Projects\Hover\obj\Debug\Assembly-CSharp.dll
+C:\Dev\GitHub\Unity-Projects\Hover\obj\Debug\Assembly-CSharp.pdb

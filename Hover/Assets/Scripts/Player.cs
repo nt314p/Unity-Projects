@@ -26,9 +26,9 @@ public class Player : MonoBehaviour {
 	public GameObject obstacle;
 	public float obsZ;
 	public float obsX;
-	public float obsEveryDist = 20f;
+	public float obsEveryDist = 200f;
 	public float everyDistCounter = 0;
-	public float obsOffset = 100f;
+	public float obsOffset = 1000f;
 	float distThisFrame;
 
 	public static float playerZ;
@@ -103,12 +103,7 @@ public class Player : MonoBehaviour {
 	}
 
 	public void CreateObstacle () {
-		// setting x and z of the obstacle
-		obsX = Random.Range (-1000, 1000) + transform.position.x;
-		obsZ = transform.position.z + obsOffset;
 
-		// spawning obstacle
-		Instantiate (obstacle, new Vector3 (obsX, 6, obsZ), Quaternion.identity);
 
 		// electricity
 		if (Random.Range (0, 5) == 2) {

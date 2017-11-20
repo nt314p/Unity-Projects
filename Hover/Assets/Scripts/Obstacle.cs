@@ -19,8 +19,7 @@ public class Obstacle : MonoBehaviour {
 	}
 
 	void Update () {
-		if (Player.playerZ > transform.position.z + 150) {
-			Destroy (this.gameObject);
-		}
+		
 	}
+		
 }
