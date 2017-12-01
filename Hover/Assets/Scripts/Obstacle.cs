@@ -17,9 +17,4 @@ public class Obstacle : MonoBehaviour {
 		transform.localScale = new Vector3 (l, h, w);
 		transform.position = new Vector3 (transform.position.x, h / 2 - 6, transform.position.z);
 	}
-
-	void Update () {
-		
-	}
-		
 }

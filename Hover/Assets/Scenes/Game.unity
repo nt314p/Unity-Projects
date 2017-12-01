@@ -1017,8 +1017,6 @@ MonoBehaviour:
   fpsText: {fileID: 1511798740}
   fpsTextObj: {fileID: 1511798742}
   newHighscoreText: {fileID: 1397566163}
-  backgroundMusic: {fileID: 1258128377}
-  backgroundMusicVol: 100
   endDistText: {fileID: 1415112890}
   deathCanvas: {fileID: 482444244}
 --- !u!1 &798937130
@@ -1665,7 +1663,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1972,13 +1970,11 @@ MonoBehaviour:
   speed: 200
   turnSpeed: 200
   turnAngle: 0
-  powerDown: {fileID: 1219477108}
-  powerDownPlay: 0
+  powerDown: {fileID: 0}
   obstacle: {fileID: 1003600847021890, guid: 2a392f459d25c43639ddc7c40831515c, type: 2}
   obsZ: 0
   obsX: 0
   obsEveryDist: 200
-  everyDistCounter: 0
   obsOffset: 1000
   electricityPickup: {fileID: 1185350157866254, guid: d59d9b68dcf6cd6499b54b6a2b942909,
     type: 2}
@@ -2101,7 +2097,6 @@ MonoBehaviour:
   obstacle: {fileID: 1003600847021890, guid: 2a392f459d25c43639ddc7c40831515c, type: 2}
   obsEveryDist: 200
   everyDistCounter: 0
-  obsDensity: 20
 --- !u!1 &1490229551
 GameObject:
   m_ObjectHideFlags: 0

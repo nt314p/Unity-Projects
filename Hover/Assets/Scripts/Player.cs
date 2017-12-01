@@ -19,7 +19,7 @@ public class Player : MonoBehaviour {
 
 	// audio
 	public AudioSource powerDown;
-	public bool powerDownPlay = false;
+	bool powerDownPlay = false;
 
 
 	// obstacle generation
@@ -27,8 +27,8 @@ public class Player : MonoBehaviour {
 	public float obsZ;
 	public float obsX;
 	public float obsEveryDist = 200f;
-	public float everyDistCounter = 0;
 	public float obsOffset = 1000f;
+	float everyDistCounter = 0;
 	float distThisFrame;
 
 	public static float playerZ;
@@ -42,6 +42,7 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		powerDown = GameObject.Find ("/Main Camera/powerDown").GetComponent<AudioSource> ();
 		rb = GetComponent<Rigidbody> ();
 		rb.angularVelocity = Vector3.zero;
 		rb.constraints = RigidbodyConstraints.FreezePositionY;

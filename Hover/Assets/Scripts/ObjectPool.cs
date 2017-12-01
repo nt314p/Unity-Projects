@@ -62,6 +62,7 @@ public class ObjectPool : MonoBehaviour {
 			// spawning obstacle
 			objPool[i, rowNum].transform.position = new Vector3 (obsX, 6, obsZ);
 			objPool[i, rowNum].transform.rotation = Quaternion.identity;
+			Player.GetComponent<Player> ().CreateObstacle ();
 		}
 
 		rowNum++;

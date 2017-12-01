@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 867
-  m_MinSize: {x: 379, y: 221}
-  m_MaxSize: {x: 8004, y: 8021}
+  m_MinSize: {x: 379, y: 242}
+  m_MaxSize: {x: 8004, y: 8042}
   vertical: 1
-  controlID: 1851
+  controlID: 1082
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 379, y: 121}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 1801
+  controlID: 1083
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,15 +203,15 @@ MonoBehaviour:
     y: 596
     width: 1440
     height: 271
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 2
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,7 +238,7 @@ MonoBehaviour:
     y: 92
     width: 1125
     height: 575
-  m_MaximizeOnPlay: 1
+  m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 1
   m_SelectedSizes: 05000000030000000000000000000000000000000000000000000000000000000000000000000000
@@ -389,7 +389,7 @@ MonoBehaviour:
     y: 92
     width: 311
     height: 575
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 94.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: -159
@@ -419,9 +419,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 712
+    y: 688
     width: 1440
-    height: 226
+    height: 250
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -450,9 +450,9 @@ MonoBehaviour:
     height: 250
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e0280000
-    m_LastClickedID: 10464
-    m_ExpandedIDs: a6fbffff00000000
+    m_SelectedIDs: d02c0000
+    m_LastClickedID: 11472
+    m_ExpandedIDs: e4a4ffff38f5ffffa6fbffff00000000282d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -468,7 +468,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
   - Game
@@ -513,18 +513,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Audio
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Audio
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Dev\GitHub\Unity-Projects\Hover
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 87}
-    m_SelectedIDs: c4270000
-    m_LastClickedID: 10180
+    m_SelectedIDs: 68270000
+    m_LastClickedID: 10088
     m_ExpandedIDs: 000000003c270000d02700000028000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -578,8 +578,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 76280000
-    m_LastClickedInstanceID: 10358
+    m_SelectedInstanceIDs: 3c2d0000
+    m_LastClickedInstanceID: 11580
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: d824000000000000dc240000
     m_RenameOverlay:

@@ -18,8 +18,8 @@ public class CanvasController : MonoBehaviour {
 	public GameObject newHighscoreText;
 
 	// audio
-	public AudioSource backgroundMusic;
-	public float backgroundMusicVol;
+	AudioSource backgroundMusic;
+	float backgroundMusicVol;
 
 	//fps
 	float frameCount;
@@ -40,6 +40,7 @@ public class CanvasController : MonoBehaviour {
 		fps = 0.0f;
 		updateRate = 4.0f;
 
+		backgroundMusic = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<AudioSource> ();
 		backgroundMusicVol = 1.0f;
 
 
