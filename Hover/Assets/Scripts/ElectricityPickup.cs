@@ -11,7 +11,6 @@ public class ElectricityPickup : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(Vector3.up, 40 * Time.deltaTime);
 		if (Player.playerZ > transform.position.z + 100) {
 			Destroy (this.gameObject);
 		}

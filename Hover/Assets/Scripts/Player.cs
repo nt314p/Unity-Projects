@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -75,7 +76,7 @@ public class Player : MonoBehaviour {
 				// spawning 10 obstacles
 				int i;
 				for (i = 0; i < 20; i++) {
-					CreateObstacle ();
+					//CreateObstacle ();
 				}
 			}
 
@@ -100,28 +101,12 @@ public class Player : MonoBehaviour {
 
 			// setting player's y to 5
 			transform.position = new Vector3 (transform.position.x, 5f, transform.position.z);
+
+			playerZ = this.transform.position.z;
 		}
 	}
 
-	public void CreateObstacle () {
 
-
-		// electricity
-		if (Random.Range (0, 5) == 2) {
-			float pX = Random.Range (-1000, 1000) + transform.position.x;
-			float pZ = obsZ;
-			Instantiate (electricityPickup, new Vector3 (pX, 10f, pZ), Quaternion.identity);
-		}
-
-		// wrench
-		if (Random.Range (0, 30) == 2) {
-			float wX = Random.Range (-1000, 1000) + transform.position.x;
-			float wZ = obsZ;
-			Instantiate (wrenchPickup, new Vector3 (wX, 10f, wZ), Quaternion.identity);
-		}
-
-		playerZ = transform.position.z;
-	}
 
 	void OnCollisionEnter (Collision other) {
 
@@ -164,7 +149,18 @@ public class Player : MonoBehaviour {
 		rb.constraints = RigidbodyConstraints.None;
 	}
 
-	void OnLevelWasLoaded () {
+	void OnEnable() {
+		// Tell our 'OnLevelFinishedLoading' function to start listening for a scene change as soon as this script is enabled.
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
+
+	void OnDisable() {
+		// Tell our 'OnLevelFinishedLoading' function to stop listening for a scene change as soon as this script is disabled. 
+		// Remember to always have an unsubscription for every delegate you subscribe to!
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode) {
 		health = 100;
 		electricity = 1000;
 		distance = 0;
@@ -175,6 +171,13 @@ public class Player : MonoBehaviour {
 		rb.angularVelocity = Vector3.zero;
 		rb.velocity = Vector3.zero;
 		rb.constraints = RigidbodyConstraints.FreezePositionY;
+		Debug.Log("Level Loaded");
+		Debug.Log(scene.name);
+		Debug.Log(mode);
+	}
+
+	void OnLevelWasLoaded () {
+		
 	}
 
 
