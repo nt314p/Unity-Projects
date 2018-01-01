@@ -9,7 +9,7 @@ public class Player : MonoBehaviour {
 	public float speed = 200f;
 	public float turnSpeed = 200f;
 	public float turnAngle = 0f;
-
+	public float velocity;
 
 	public static float health = 100f;
 	public static float electricity = 1000f;
@@ -22,14 +22,6 @@ public class Player : MonoBehaviour {
 	public AudioSource powerDown;
 	bool powerDownPlay = false;
 
-
-	// obstacle generation
-	public GameObject obstacle;
-	public float obsZ;
-	public float obsX;
-	public float obsEveryDist = 200f;
-	public float obsOffset = 1000f;
-	float everyDistCounter = 0;
 	float distThisFrame;
 
 	public static float playerZ;
@@ -68,20 +60,8 @@ public class Player : MonoBehaviour {
 			if (forwardVel < 250) {
 				rb.AddRelativeForce (Vector3.forward * speed * 100 * Time.deltaTime);
 			}
-			
-			// spawning objects
-			if (everyDistCounter >= obsEveryDist) {
-				everyDistCounter = 0;
-
-				// spawning 10 obstacles
-				int i;
-				for (i = 0; i < 20; i++) {
-					//CreateObstacle ();
-				}
-			}
 
 			distThisFrame = Mathf.Round (100 * forwardVel * Time.deltaTime) / 100f;
-			everyDistCounter += distThisFrame;
 
 			// adding distance
 			distance += distThisFrame;
@@ -106,13 +86,16 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-
-
+	void FixedUpdate () {
+		// setting velocity for collision
+		velocity = rb.velocity.magnitude;
+	}
+		
 	void OnCollisionEnter (Collision other) {
 
 		// detecting collisions and deducting health
 		if (other.gameObject.CompareTag ("obstacle")) {
-			health -= Mathf.Abs (forwardVel * 0.02f);
+			health -= Mathf.Abs (velocity * 0.02f);
 		}
 	}
 
@@ -164,7 +147,6 @@ public class Player : MonoBehaviour {
 		health = 100;
 		electricity = 1000;
 		distance = 0;
-		everyDistCounter = 0;
 		dead = false;
 		powerLoss = false;
 		rb = GetComponent<Rigidbody> ();
@@ -175,10 +157,4 @@ public class Player : MonoBehaviour {
 		Debug.Log(scene.name);
 		Debug.Log(mode);
 	}
-
-	void OnLevelWasLoaded () {
-		
-	}
-
-
 }

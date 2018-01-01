@@ -12,7 +12,7 @@ public class Obstacle : MonoBehaviour {
 		l = Random.Range (10, 30);
 		h = Random.Range (30, 200);
 
+		transform.position = new Vector3 (transform.position.x, (h - 6)/2, transform.position.z);
 		transform.localScale = new Vector3 (l, h, 10);
-		transform.position = new Vector3 (transform.position.x, h / 2 - 6, transform.position.z);
 	}
 }

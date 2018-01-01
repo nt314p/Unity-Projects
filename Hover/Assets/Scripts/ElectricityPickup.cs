@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class ElectricityPickup : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		if (Player.playerZ > transform.position.z + 100) {

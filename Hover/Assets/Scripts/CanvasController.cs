@@ -52,13 +52,9 @@ public class CanvasController : MonoBehaviour {
 
 		} else {
 			fpsText.SetActive (false);
-
 		}
 
 		nextUpdate = Time.time;
-
-
-
 	}
 
 	// Update is called once per frame

@@ -23,7 +23,7 @@ public class ObjectPool : MonoBehaviour {
 	public float everyDistCounter = 0;
 	float distThisFrame;
 
-	int obsDensity = 80; // 
+	int obsDensity = 80; // number of objects to distribute across the range
 	int rowNum = 0; // 0 - 6 is 1 - 7
 
 	void Start () {
