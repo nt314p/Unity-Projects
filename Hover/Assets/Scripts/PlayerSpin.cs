@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerSpin : MonoBehaviour {
 
-	public float dir = -0.01f;
+	float dir = -1.0f;
+	bool justFlipped = false;
 	public GameObject highscoreCanvas;
 	
 	// Update is called once per frame
@@ -18,9 +19,13 @@ public class PlayerSpin : MonoBehaviour {
 		transform.position += Vector3.up*dir*Time.deltaTime;
 
 		// changing direction
-		if (transform.position.y > 8	 || transform.position.y < 6) {
-			dir *= -1;
+		if (transform.position.y > 8 || transform.position.y < 6) {
+			if (!justFlipped) {
+				dir *= -1;
+				justFlipped = true;
+			}
+		} else {
+			justFlipped = false;
 		}
-
 	}
 }
