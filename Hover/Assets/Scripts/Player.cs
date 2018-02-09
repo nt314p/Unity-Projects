@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour {
 
 	// transform and rotation
-	public float speed = 200f;
+	public float acceleration = 150f;
 	public float turnSpeed = 200f;
 	public float turnAngle = 0f;
 	public float velocity;
@@ -58,7 +58,7 @@ public class Player : MonoBehaviour {
 
 			// forward movement
 			if (forwardVel < 250) {
-				rb.AddRelativeForce (Vector3.forward * speed * 100 * Time.deltaTime);
+				rb.AddRelativeForce (Vector3.forward * acceleration * 100 * Time.deltaTime);
 			}
 
 			distThisFrame = Mathf.Round (100 * forwardVel * Time.deltaTime) / 100f;

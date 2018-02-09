@@ -65,7 +65,7 @@ public class CanvasController : MonoBehaviour {
 			// displaying status
 			healthText.text = "Health: " + (Mathf.Round (10 * Player.health)) / 10f;
 			electricityText.text = "Electricity: " + (Mathf.Round (10 * Player.electricity)) / 10f;
-			speedText.text = "Speed: " + (Mathf.Round (10 * Player.forwardVel)) / 10 + " m/s";
+			speedText.text = "Speed: " + Mathf.Round ( Player.forwardVel) + " m/s";
 			distanceText.text = "Distance: " + (Mathf.Round (10 * Player.distance)) / 10 + " m";
 
 			// fps
