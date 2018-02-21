@@ -7,7 +7,7 @@ public class Player : MonoBehaviour {
 
 	// transform and rotation
 	public float acceleration = 150f;
-	public float turnSpeed = 200f;
+	float turnSpeed = 20000f;
 	public float turnAngle = 0f;
 	public float velocity;
 
@@ -49,12 +49,14 @@ public class Player : MonoBehaviour {
 
 			// turning the hovercraft
 			transform.eulerAngles = new Vector3 (0, 0, Input.GetAxis ("Horizontal") * -15);
-			// moving the hovercraft left and right
+
 			if (Mathf.Abs (rb.velocity.x) > 300) {
 				Debug.Log ("Speed over 300!");
 			}
 
-			rb.AddForce (Vector3.right * Input.GetAxis ("Horizontal") * 100 * turnSpeed * Time.deltaTime);
+			// moving the hovercraft left and right
+			rb.AddForce (Vector3.right * Input.GetAxis ("Horizontal") * turnSpeed * Time.deltaTime);
+			Debug.Log(Input.GetAxis ("Horizontal"));
 
 			// forward movement
 			if (forwardVel < 250) {
@@ -69,6 +71,7 @@ public class Player : MonoBehaviour {
 			// taking away electricity
 			electricity -= 18f * Time.deltaTime;
 
+			// checking for low health and electricity
 			if (health <= 0) {
 				dead = true;
 				Death ();
@@ -80,17 +83,17 @@ public class Player : MonoBehaviour {
 			}
 
 			// setting player's y to 5
-			transform.position = new Vector3 (transform.position.x, 5f, transform.position.z);
-
 			playerZ = this.transform.position.z;
 		}
 	}
 
 	void FixedUpdate () {
 		// setting velocity for collision
-		velocity = rb.velocity.magnitude;
+		velocity = rb.velocity.magnitude;			
+		transform.position = new Vector3 (transform.position.x, 5f, transform.position.z);
+
 	}
-		
+
 	void OnCollisionEnter (Collision other) {
 
 		// detecting collisions and deducting health
@@ -100,10 +103,9 @@ public class Player : MonoBehaviour {
 	}
 
 	public static void AddElectricity () {
-
-		// electricity pickup
 		electricity += 50;
 
+		// capping electricity
 		if (electricity > 1000) {
 			electricity = 1000;
 		}
@@ -112,6 +114,7 @@ public class Player : MonoBehaviour {
 	public static void AddHealth () {
 		health += 5;
 
+		// capping health
 		if (health > 100) {
 			health = 100;
 		}
@@ -132,18 +135,19 @@ public class Player : MonoBehaviour {
 		rb.constraints = RigidbodyConstraints.None;
 	}
 
-	void OnEnable() {
+	void OnEnable () {
 		// Tell our 'OnLevelFinishedLoading' function to start listening for a scene change as soon as this script is enabled.
 		SceneManager.sceneLoaded += OnLevelFinishedLoading;
 	}
 
-	void OnDisable() {
+	void OnDisable () {
 		// Tell our 'OnLevelFinishedLoading' function to stop listening for a scene change as soon as this script is disabled. 
 		// Remember to always have an unsubscription for every delegate you subscribe to!
 		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
 	}
 
-	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode) {
+	void OnLevelFinishedLoading (Scene scene, LoadSceneMode mode) {
+		// reseting values
 		health = 100;
 		electricity = 1000;
 		distance = 0;
@@ -153,8 +157,8 @@ public class Player : MonoBehaviour {
 		rb.angularVelocity = Vector3.zero;
 		rb.velocity = Vector3.zero;
 		rb.constraints = RigidbodyConstraints.FreezePositionY;
-		Debug.Log("Level Loaded");
-		Debug.Log(scene.name);
-		Debug.Log(mode);
+		Debug.Log ("Level Loaded");
+		Debug.Log (scene.name);
+		Debug.Log (mode);
 	}
 }
