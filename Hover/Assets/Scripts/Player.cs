@@ -56,7 +56,7 @@ public class Player : MonoBehaviour {
 
 			// moving the hovercraft left and right
 			rb.AddForce (Vector3.right * Input.GetAxis ("Horizontal") * turnSpeed * Time.deltaTime);
-			Debug.Log(Input.GetAxis ("Horizontal"));
+			// Debug.Log(Input.GetAxis ("Horizontal"));
 
 			// forward movement
 			if (forwardVel < 250) {

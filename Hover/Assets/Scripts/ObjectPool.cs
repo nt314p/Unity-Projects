@@ -17,7 +17,7 @@ public class ObjectPool : MonoBehaviour {
 	// obstacle generation
 	float obsX;
 	float obsZ;
-	float obsOffset = 1000; // the original offset (new obstacles will spawn [x] m in the distance)
+	float obsOffset = 1200; // the original offset (new obstacles will spawn [x] m in the distance)
 	float obsRange = 3000; // the left or right maximum spawn 
 	public float obsEveryDist = 200f;
 	public float everyDistCounter = 0;
@@ -25,15 +25,20 @@ public class ObjectPool : MonoBehaviour {
 
 	int obsDensity = 80; // number of objects to distribute across the range
 	int rowNum = 0; // 0 - 6 is 1 - 7
+	int rows; // how many rows of obstacles can exist at once
 
 	void Start () {
+
+		rows = (int)(obsOffset/obsEveryDist) + 2; // setting rows
+
 		// filling object pool
-		obstaclePool = new GameObject[obsDensity,7];
+		obstaclePool = new GameObject[obsDensity,rows];
 		Player = GameObject.FindGameObjectWithTag ("Player");
 
+
 		for (int i = 0; i < obsDensity; i++) {
-			for (int j = 0; j < 7; j++) {
-				obstaclePool [i,j] = Instantiate(obstacle, new Vector3(0, 0, -1000), Quaternion.identity);
+			for (int j = 0; j < rows; j++) {
+				obstaclePool [i,j] = Instantiate(obstacle, new Vector3(0, 0, -obsOffset), Quaternion.identity);
 			}
 		}
 	}
@@ -42,7 +47,6 @@ public class ObjectPool : MonoBehaviour {
 	void Update () {
 
 		forwardVel = Player.GetComponent<Rigidbody>().velocity.z;
-
 
 		// spawning objects
 		if (everyDistCounter >= obsEveryDist) {
@@ -69,7 +73,7 @@ public class ObjectPool : MonoBehaviour {
 		rowNum++;
 
 		// resetting the row counter
-		if (rowNum >= 7) {
+		if (rowNum >= rows) {
 			rowNum = 0;
 		}
 	}
